@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            background-color: white;
+            height: 450px;
+            width: 350px;
+            top: 50px;
+            margin: auto;
+        }
+
+        #logo {
+            position: relative;
+            margin-left: 75px;
+            margin-top: 15px;
+
+        }
+
+        input {
+            background-color: whitesmoke;
+            width: 258px;
+            height: 38px;
+            margin: 5px 5px 0px 5px;
+            border-radius: 5px;
+            border: solid 0.5px whitesmoke;
+            padding: 2px 10px 2px 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        input:focus {
+            outline: 0.5px solid;
+            outline-color: lightgrey;
+        }
+
+        #sub-main {
+            border: solid rgb(255, 255, 255) 1px;
+            width: 290px;
+            height: 175px;
+            margin: 30px;
+
+        }
+
+        #loginbutton {
+            width: 280px;
+            height: 35px;
+            margin-left: 4px;
+            margin: 10px 5px 5px;
+            border-radius: 5px;
+            border: 0px;
+            background-color: rgba(125, 141, 252, 255);
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        #loginbutton:hover {
+            background-color: rgb(65, 80, 247);
+        }
+
+        #line1,
+        #line2 {
+            width: 108px;
+            border: solid rgb(171, 168, 168) 0.5px;
+            margin-left: 5px;
+
+        }
+
+        #line1 {
+            position: relative;
+            top: 20px;
+        }
+
+        #line2 {
+            width: 108px;
+            position: relative;
+            left: 164px;
+            bottom: 3px;
+
+        }
+
+        #orr {
+            position: relative;
+            left: 130px;
+            bottom: -9px;
+            color: rgb(171, 168, 168);
+            font-weight: 600;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #faclogimg {
+            position: relative;
+            left: 80px;
+        }
+
+        #texttt {
+            text-decoration: none;
+            color: #3d91ff;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: relative;
+            left: 85px;
+            bottom: 6px;
+        }
+
+        #forget {
+            text-decoration: none;
+            color: rgb(45, 45, 45);
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: relative;
+            top: 40px;
+            left: -80px;
+
+        }
+
+        #signup {
+            text-decoration: none;
+            font-weight: 350;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #signup1 {
+            text-decoration: none;
+            font-weight: 600;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgba(125, 141, 252, 255);
+        }
+
+        #signup {
+            position: relative;
+            bottom: -80px;
+            left: 70px;
+        }
+
+        #navlinks {
+            color: grey;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+        }
+
+        #navlinks {
+            position: relative;
+            top: 200px;
+            left: -80px;
+        }
+
+        .footer {
+            display: inline-block;
+            padding: 0 !important;
+            margin: 0;
+            margin-bottom: 10px !important;
+            margin-left: 15px;
+        }
+
+        .footer:hover {
+            text-decoration: underline;
+        }
+
+        #lang {
+            border: none;
+            color: grey;
+            position: relative;
+            font-size: medium;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            top: 200px;
+        }
+
+        #lang:focus {
+            outline: 0;
+        }
+
+        #low1 {
+            color: grey;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: relative;
+            top: 200px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <div id="main">
+        <img src="download.png" alt="" id="logo" width="200px">
+        <div id="sub-main">
+            <input type="text" placeholder="Phone number, username, or email">
+            <input type="text" placeholder="Password">
+            <button id="loginbutton">Log in</button>
+            <div id="line1"></div>
+            <span id="orr">OR</span>
+            <div id="line2"></div>
+        </div>
+        <div id="sub-main2">
+            <img src="facebook logo.jpg" width="25px" height="25px" id="faclogimg">
+            <a href="#" id="texttt">Log in with Facebook</a>
+            <a href="#" id="forget">Forgot Password?</a>
+        </div>
+        <span id="signup">Don't have an account?<a href="#" id="signup1"> Sign up</a></span>
+        <pre id="navlinks">
+    <span class="footer">Meta     About    Blog    Jobs     Help     API     Privacy      Terms</span>
+    <span class="footer">Locations   Instagram Lite   Meta AI   Meta AI   Meta AI Articles</span>
+    <span class="footer">  Threads    Contact Uploading  &  Non-Users Meta Verified</span>
+</pre>
+        <select name="" id="lang">
+            <option value="">English</option>
+            <option value="">Hindi</option>
+        </select>
+        <span id="low1">© 2025 Instagram from Meta</span>
+    </div>
+   
+</body>
+
+</html>
